@@ -87,6 +87,9 @@
     <None Include="Resources\курсовая_по_моделированию-УА-ОА_стр.схема.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\курсовая_по_моделированию-ГСА_умножение.jpg" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\курсовая_по_моделированию-УА-ОА_стр.схема1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

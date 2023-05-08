@@ -82,6 +82,8 @@
             {
                 Step();
             }
+
+            _mainForm.UpdateStateMemory(0);
         }
 
         /// <summary>
@@ -90,8 +92,11 @@
         public void Step()
         {
             if (!_run)
+            {
+                _mainForm.UpdateStateMemory(0);
                 return;
-            
+            }
+
             var x = _operationMachine.X;
             _mainForm.UpdateInfoPly(x);
             _mainForm.UpdateInfoState(_d);
@@ -208,7 +213,7 @@
             _operationMachine = new OperationMachine(0, 0);
             InstallData = false;
             _lastState = 0;
-            _a = new bool[6];
+            _a = new bool[7];
             _a[0] = true;
             _d = new bool[3];
             _run = true;
